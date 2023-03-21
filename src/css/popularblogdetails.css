@@ -1,0 +1,50 @@
+
+.blogTextPara{
+    width:100%;
+    margin-left: -70px;
+}
+
+.popularImage img {
+    width: 100% !important;
+    height:200px;
+    padding-bottom:5%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    position:relative;
+    /* width:40%; */
+    border-radius: 5px;
+  }
+  /* .desc, .image {
+    float:left;
+    display:block
+  } */
+
+  .desc {
+    width:60%;
+    text-align:center;
+    padding:20px;
+  }
+
+  .blogTextPara p, h3, h5, h6{
+   margin-left: 50px;
+  }
+
+  .container code {
+    display: block;
+    height: 50px !important;
+    width: 500px;
+    /* background-color:#c3cbe0; */
+    background-color:#747678;
+    color: rgb(204, 255, 0);
+    border-radius: 3px;
+    text-align: left;
+    padding: 20px 0px 0px 10px;
+   }
+
+  /* @media (max-width:600px) {
+    .desc, .image {
+      float:none;
+      width:100%;
+    }
+  } */

@@ -1,0 +1,10 @@
+body {
+    /* background-color: #f4f4f4; */
+    background-color: rgb(232, 236, 250);
+}
+
+
+.logoheader h1{
+    margin: 10px 0px 10px 10px !important;
+    color: black !important;
+}

@@ -1,0 +1,224 @@
+li::marker{
+  margin-top: 5px;
+  color: #5A43F1;
+}
+.navigationpanel{
+  margin: 20px;
+}
+.some-page-wrapper {
+    margin: 50px;
+}
+.some-page-wrapper .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+.header h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+.aboutRole h2 {
+  text-align: center;
+  color:#181819;
+}
+
+.aboutRole h4{
+  text-align: center;
+  font-weight: 500;
+  color: rgba(115,115,115);
+}
+
+.aboutRole h4 a{
+  text-align: center;
+  font-weight: 500;
+  color: #5A43F1;
+}
+
+.socialoptions{
+ display: flex;
+ margin-left: 130px;
+}
+
+.socialoptions a{
+  position: relative;
+  margin: 10px;
+  align-items: center;
+}
+  
+.box {
+	color:#373738;
+	padding: 1em;
+}
+.leftside{
+  /* background-color: #f4f4f4; */
+  background-color: rgb(232, 236, 250);
+}
+.rightside {
+  /* background-color: #f4f4f4; */
+  background-color: rgb(232, 236, 250);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.rightside p a{
+ color: #5A43F1;
+}
+
+.mob_link {
+    padding-top: 5px !important;
+    display: inline block;
+    height: 30px;
+    padding: 10px;
+    color: #2e2e2f;    
+    background-color: transparent; 
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.navigationpanel a:hover
+{
+  background-color: #d7def0;
+}
+
+.profile{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@media only screen and (max-width: 1920px)  {
+
+  .aboutColumn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    grid-gap: 10px;
+    margin: 20px 0px 20px 370px;
+  }
+    
+  .box {
+    color:#373738;
+    padding: 0.2em;
+  }
+
+  .leftside {
+    flex-direction: row;
+    /* background-color: #f4f4f4; */
+    background-color: rgb(232, 236, 250);
+    height: 100%;
+    margin-left: -10px;
+    border: solid 1px rgb(226, 163, 243);
+  }
+
+  .rightside {
+    flex-direction: row;
+    /* background-color: #f4f4f4; */
+    background-color: rgb(232, 236, 250);
+    height: 100%;
+    border: solid 1px rgb(226, 163, 243);
+  }
+
+  .aboutImage img{
+    height: 200px;
+    border-radius: 100px;
+    margin: 50px 0px 0px 135px;
+  }
+
+  .aboutRole h2, h4 {
+    text-align: center;
+    color:#181819;
+    margin-right: 50px;
+  }
+
+  .aboutRole h4 {
+    margin-right: 20px;
+  }
+  
+
+}
+
+
+@media only screen and (max-width: 1537px)  {
+
+  .aboutColumn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    grid-gap: 10px;
+    margin: 20px 0px 20px 100px;
+  }
+
+  .leftside {
+    flex-direction: row;
+    /* background-color: #f4f4f4; */
+    background-color: rgb(232, 236, 250);
+    height: 100%;
+    border: solid 1px rgb(226, 163, 243);
+  }
+
+  .rightside {
+    flex-direction: row;
+    /* background-color: #f4f4f4; */
+    background-color: rgb(232, 236, 250);
+    height: 100%;
+    border: solid 1px rgb(226, 163, 243);
+  }
+
+  .aboutImage img{
+    height: 200px;
+    border-radius: 100px;
+    margin: 50px 0px 0px 200px;
+  }
+
+  .aboutRole h2, h4 {
+    text-align: center;
+    color:#181819;
+    margin-right: 10px;
+  }
+
+  .aboutRole h4 {
+    margin-right: 10px;
+  }
+
+  .socialoptions{
+    display: flex;
+    margin-left: 200px;
+   }
+    
+}
+
+ @media only screen and (max-width : 375px) {
+
+      .aboutColumn {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-gap: 10px;
+        margin: 20px 0px 20px 10px !important;
+      }
+        
+      .box {
+        color:#373738;
+        padding: 0.2em;
+      }
+    
+      .leftside {
+        flex-direction: row;
+        /* background-color: #f4f4f4; */
+        background-color: rgb(232, 236, 250);
+        height: 100%;
+      }
+    
+      .rightside {
+        flex-direction: row;
+        /* background-color: #f4f4f4; */
+        background-color: rgb(232, 236, 250);
+        height: 100%;
+        margin-left: -100px;
+      }
+    
+      .aboutImage img{
+        height: 400px;
+        margin-left: -100px;
+      }
+      .socialoptions .aboutRole{
+        margin-left: -20px;
+      }
+      
+      
+
+} 
