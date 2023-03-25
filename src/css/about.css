@@ -138,9 +138,9 @@ li::marker{
 
   .aboutColumn {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
     grid-gap: 10px;
-    margin: 20px 0px 20px 100px;
+    margin: 20px 0px 20px 10px;
   }
 
   .leftside {

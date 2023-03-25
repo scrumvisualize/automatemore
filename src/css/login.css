@@ -77,6 +77,15 @@
         margin: 0px 0px 30px 4px !important;
     }
 
+    .col-low input{
+        width: 300px !important;
+        margin: 10px 0px 20px 100px !important;
+        background-color: rgb(12, 234, 189);
+        border-color: #fff;
+        color: #fff;
+        font-weight: 700;
+    }
+
     .loginForm .emailValidationText span{
         color: rgb(238, 6, 56) !important;
         font-size: 12px !important;
@@ -212,8 +221,8 @@
     
         .col-low input{
             /* width: 310px !important; */
-            margin: 10px 0px 20px 0px !important;
-            background-color: rgb(12, 234, 189);
+        margin: 10px 0px 20px 0px !important;
+        background-color: rgb(12, 234, 189);
         border-color: #fff;
         color: #fff;
         font-weight: 700;

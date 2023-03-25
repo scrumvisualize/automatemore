@@ -72,7 +72,7 @@ const Login = () => {
                                     message: "Minimum length of 5 letters"
                                 },
                                 pattern: {
-                                    value: /^(?=.*?\d)(?=.*?[a-zA-Z])[a-zA-Z\d][a-zA-Z\d\#!@~$]+$/,
+                                    value: /^(?=.*?\d)(?=.*?[a-zA-Z])[a-zA-Z\d][a-zA-Z\d\-#!@~$]+$/,
                                     message: "Password begin with letter, includes number & special character"
                                 }
                             })}

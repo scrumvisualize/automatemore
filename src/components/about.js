@@ -51,11 +51,11 @@ const About = () => {
                         <ul className="profile data">
                             <li>I am originally from South India. I completed my engineering in 2002, later started my career in testing & completed an ISTQB certification.
                             </li>
-                            <li>I've worked in various industries such as Healthcare, Airline, Market Research, Job Management, Education and have experience in messaging standards like HL7, IATA.</li>
+                            {/* <li>I've worked in various industries such as Healthcare, Airline, Market Research, Job Management, Education and have experience in messaging standards like HL7, IATA.</li> */}
                             <li>On a daily basis, I'm responsible for creating e2e automation tests, creating api tests in Cypress and maintaining stable automation framework.</li>
                             <li>I have developed different web applications using Reactjs, Express, Axios, Sequelize, MySQL, Postgres, Java, Html, and javascript.</li>
                             <li>I love to play soccer during weekdays/weekends with my community soccer club in Brisbane. It helps my mental and physical wellbeing and keeps my spirits high!</li>
-                            <li>Last year I joined Lotus club in Brisbane and really enjoy playing cards.</li>
+                            {/* <li>Last year I joined Lotus club in Brisbane and really enjoy playing cards.</li> */}
                             <li>One of my long time wishes was to create a blog site in Reactjs & I am passionate to do more projects within React</li>
                             <li>I am interested in innovation and ideas and would love to listen to people with similar vibes! </li>
                         </ul>

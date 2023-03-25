@@ -1,27 +1,39 @@
 const express = require('express');
+// import express from 'express';
+// import bodyParser from 'body-parser';
 const bodyParser = require("body-parser");
 const db = require("./db/dbConfig");
+const { Sequelize, DataTypes } = require("sequelize");
+//import {Sequelize, DataTypes } from 'sequelize';
+const bcrypt = require('bcryptjs');
 
-const blogsDBName = process.env.REACT_DB_NAME;
-const dbUserName = process.env.REACT_DB_USERNAME;
-const dbPassword = process.env.REACT_DB_PASSWORD;
+//dotenv.config()
+
+// const dbName = process.env.REACT_DB_NAME;
+// console.log("Database Name:: "+dbName);
 
 //var multer  = require('multer')
 //var path = require('path');
 //const moment = require('moment');
 
-const { Sequelize, DataTypes } = require("sequelize");
+
 const usersSchema = require('./modals/users');
 const usersBlogSchema = require('./modals/userBlogs');
 const subscriberSchema = require('./modals/subscriber');
 
+// import {usersSchema} from "./modals/users.js";
+// import usersBlogSchema from "./modals/userBlogs.js"; 
+// import subscriberSchema from "./modals/subscriber.js";
+// import cors from 'cors';
+
+
 const cors = require('cors');
 
 const port = 8000;
-const DB_NAME = blogsDBName;
+const DB_NAME = 'vinblogs';
 const DB_PORT = 5432;
-const DB_USERNAME = dbUserName;
-const DB_PASSWORD = dbPassword;
+const DB_USERNAME = 'postgres';
+const DB_PASSWORD = 'root';
 const DB_HOST = 'localhost';
 const DB_DIALECT = 'postgres';
 const DB_POOL = {
@@ -68,11 +80,17 @@ app.post('/service/login', async (req, res) => {
       res.status(403).json({ fail: "Invalid admin user details !" });
     }
     const email = sqlQuery[0].email;
-    const password = sqlQuery[0].password;
-    if (password === userPassword && email === userEmail) {
-      res.status(200).json({ success: true });
+    const hashedPassword = sqlQuery[0].password;
+    
+    if (email === userEmail) {
+      var comparedResult = bcrypt.compareSync(userPassword, hashedPassword);
+      if (comparedResult) {
+        res.status(200).json({ success: true });
+      } else {
+        res.status(403).json({ fail: "Password is incorrect !" });
+      }      
     } else {
-      res.status(403).json({ fail: "Email address or Password is incorrect !" });
+      res.status(403).json({ fail: "Email address is incorrect !" });
     }
   } catch (e) {
     console.log(e);

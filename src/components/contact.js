@@ -68,8 +68,12 @@ const Contact = () => {
                         {...register("comments", {
                             required: true,
                             minLength: {
-                                value: 30,
-                                message: "Minimum length of 30 letters"
+                                value: 50,
+                                message: "Minimum length of 50 letters"
+                            },
+                            maxLength: {
+                                value: 300,
+                                message: "Too Many Characters"
                             },
                             pattern: {
                                 value:  /^[a-z0-9\s"?!,\-.@&]+$/i,

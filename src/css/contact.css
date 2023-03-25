@@ -1,10 +1,71 @@
+
+
+
+@media only screen and (max-width: 1920px)  {
+
+    .contactForm{
+        width: 500px !important;
+        height: 500px !important;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        margin: 3% 0% 0% 35% !important;
+        border-color: #4076bd;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .contactForm input{
+        width: 400px !important;
+        height: 40px !important;
+        margin: 50px 0px 10px 50px;
+    }
+
+    .contactForm textarea{
+        width: 400px !important;
+        height: 120px !important;
+        margin: 50px 0px 10px 50px;
+    }
+
+    .col-low{
+        width: 510px !important;
+        margin: 10px 0px 20px 0px !important;
+    }
+
+    .contactForm .emailValidationText span{
+        color: rgb(238, 6, 56) !important;
+        font-size: 12px !important;
+        text-align: center !important;
+        margin: 50px;
+    }
+
+    .contactForm .commentValidationText span{
+        color: rgb(238, 6, 56) !important;
+        font-size: 12px !important;
+        margin: 50px;
+    }
+
+    .contact input{
+        background-color: rgb(12, 234, 189);
+        border-color: #fff;
+        color: #fff;
+        font-weight: 700;
+        margin: 10px 0px 20px 50px !important;
+    }
+    .contactheader{
+        color: #4076bd;
+        margin: 20px 0px 0px 60px;
+        font-size: 13px !important;
+    }
+  
+}
+
 @media only screen and (max-width: 1537px)  {
     .contactForm{
         width: 500px !important;
         height: 500px !important;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-        margin: 0% 0% 0% 28% !important;
+        margin: 50px 0px 0px 440px !important;
         border-color: #4076bd;
         background-color: #fff;
     }
@@ -51,59 +112,17 @@
 }
 
 
-@media only screen and (max-width: 1920px)  {
+@media only screen and (max-width : 375px) {
 
     .contactForm{
-        width: 500px !important;
-        height: 500px !important;
+        width: 250px !important;
+        height: 250px !important;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-        margin: 0% 0% 0% 34% !important;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin: 0% 0% 0% 20% !important;
         border-color: #4076bd;
         background-color: #fff;
         border-radius: 5px;
     }
-
-    .contactForm input{
-        width: 400px !important;
-        height: 40px !important;
-        margin: 50px 0px 10px 50px;
-    }
-
-    .contactForm textarea{
-        width: 400px !important;
-        height: 120px !important;
-        margin: 50px 0px 10px 50px;
-    }
-
-    .col-low{
-        width: 510px !important;
-        margin: 10px 0px 20px 0px !important;
-    }
-
-    .contactForm .emailValidationText span{
-        color: rgb(238, 6, 56) !important;
-        font-size: 12px !important;
-        text-align: center !important;
-        margin: 50px;
-    }
-
-    .contactForm .commentValidationText span{
-        color: rgb(238, 6, 56) !important;
-        font-size: 12px !important;
-        margin: 50px;
-    }
-
-    .contact input{
-        background-color: rgb(12, 234, 189);
-        border-color: #fff;
-        color: #fff;
-        font-weight: 700;
-    }
-    .contactheader{
-        color: #4076bd;
-        margin: 20px 0px 0px 60px;
-        font-size: 13px !important;
-    }
-  
-}
+ 
+} 
