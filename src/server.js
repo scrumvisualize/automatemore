@@ -238,6 +238,23 @@ app.post('/service/createsubscriber', async (req, res, next) => {
 
 
 
+/* Getting the latest subscriber email, comments details in admin page  */
+
+app.get('/service/feedback', async (req, res, next) => {
+
+  try {
+    const feeds = await sequelize.query('select * from subscriber order by id desc limit 1;');
+    const feedData = feeds[0];
+    res.status(200).json({ feedData });
+  } catch (e) {
+    console.log(e);
+    return next(e);
+  }
+});
+
+
+
+
 (async () => {
   try {
     const sequelizeStatus = await sequelize.sync();

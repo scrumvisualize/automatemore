@@ -319,7 +319,7 @@ const BlogSection = () => {
           <div className="column">
           <a href="https://www.facebook.com/southsidesoccerstuds/">
               {/* <h4> SSS Club</h4> */}
-               <p>SSS Soccer Club, Brisbane</p>
+               <p>Southside Soccer Studs, Brisbane</p>
             </a>
           </div>
           <div className="column">

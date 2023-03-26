@@ -119,7 +119,7 @@
         height: 250px !important;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        margin: 0% 0% 0% 20% !important;
+        margin: 0% 0% 0% 0% !important;
         border-color: #4076bd;
         background-color: #fff;
         border-radius: 5px;

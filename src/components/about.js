@@ -43,8 +43,7 @@ const About = () => {
                     </div>
                     <div className="box rightside">
                         <p>
-                            Hey! , Hola!, Bonjour! , Hallå! , Nǐ hǎo! , Namaskaram! , I'm Vinod! I'm an automation engineer working at <a href="https://www.teachstarter.com/">Teach Starter</a>, in Brisbane. I am currently working on Cypress, Javascript and GitHub actions. Previously, I worked at simPRO, Patient Zero, Qrious,
-                            infotools, Healthlink, KPMG, and IBS Software Services.
+                            Hey! , Hola!, Bonjour! , Hallå! , Nǐ hǎo! , Namaskaram! , I'm Vinod! I'm an automation engineer working at <a href="https://www.teachstarter.com/">Teach Starter</a>, in Brisbane. I am currently working on Cypress, Javascript and GitHub actions. 
                         </p>
                         <hr></hr>
                         <div>Other things about me:</div>

@@ -51,6 +51,7 @@ const Admin = () => {
     const navigate = useNavigate();
     const [editBlogData, setEditBlogData] = useState([]);
     const [showAlert, setShowAlert] = React.useState(false);
+    const [latestFeedback, setLatestFeedback] = useState([]);
 
    
     useEffect(() => {
@@ -111,6 +112,19 @@ const Admin = () => {
           }
         }
         fetchData();
+}, []);
+
+
+useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get(`${appUrl}/service/feedback`);
+        setLatestFeedback(res.data.feedData);
+      } catch (e) {
+        console.log(e);
+      }
+    }
+    fetchData();
 }, []);
 
 
@@ -251,7 +265,7 @@ const Admin = () => {
                             {
                                 blogList.map(({ id, blogdetails, tags, count }) => (
                                     <div className='row'>
-                                        <a key={id} href="https://www.google.com/" className='blogitems'>
+                                        <a key={id} className='blogitems'>
                                             <pre><span>{tags}</span> {blogdetails &&  blogdetails.length > 15 ? blogdetails.substring(0, 15) + '...' : blogdetails}<span>{count}</span></pre>
                                         </a>
                                         <div className='blogitems edit'>
@@ -268,7 +282,20 @@ const Admin = () => {
                     <label>
                         <span className="adminDeleteMsg">{helperText}</span>
                     </label>
-                    
+
+                    <div className='row'>
+                      <h1>Feedback</h1>
+                        <div className='feedbackSection'>
+                            {
+                            latestFeedback.map( item => (
+                            <div className='row'>
+                                <a key={item.id} className='blogitems'>
+                                    <pre><span>{item.id}</span> <span className='feedbackEmail'>{item.email}</span> <span className='feedbackComments'>{item.comments && item.comments.length > 50 ? item.comments.substring(0, 50) + '...' : item.comments}</span></pre>
+                                </a>
+                            </div>
+                            ))}       
+                        </div>
+                    </div>
                 </div>
                 
             </div>
