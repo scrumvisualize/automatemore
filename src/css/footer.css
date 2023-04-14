@@ -5,7 +5,7 @@
     font-family: gotham,Helvetica,Arial,sans-serif;
     font-size: 12px;
     height: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     width: 100%;
     position: fixed;
     bottom: 0;

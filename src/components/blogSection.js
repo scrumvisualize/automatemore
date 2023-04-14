@@ -37,7 +37,7 @@ const repoData = [
   {
     id: 6,
     repoName: "vinmatblogs"
-  },
+  }
 
 ]
 
@@ -308,30 +308,35 @@ const BlogSection = () => {
     <div className='mainsponsors'>
       <div className='row'>
         <div className='sponsors'>
+        <div className="column">
+          <div className='sponsorImage'>
+            <a href="https://orangevalleygroup.com/">
+               <img src="images/orangevalley.png" />
+            </a>
+          </div>
+          </div>
+          <div className="column">
+          <div className='sponsorImage'>
+          <a href="https://www.facebook.com/southsidesoccerstuds/">
+               <img src="images/SSSImg.png" />
+            </a>
+            </div>
+          </div>
           <div className="column">
             <div className='sponsorImage'>
               <a href="https://loanhouselendingsolutions.com.au/">
-              {/* <h4> Loan House Lending Solutions, Brisbane</h4> */}
                <img src="images/loanhouse.png" />
               </a>
             </div>
           </div>
           <div className="column">
-          <a href="https://www.facebook.com/southsidesoccerstuds/">
-              {/* <h4> SSS Club</h4> */}
-               <p>Southside Soccer Studs, Brisbane</p>
+          <div className='sponsorImage'>
+            <a href="https://lachlan-miller.me/">
+              <h4>Lachlan Miller</h4>
+              <p><span className='motivators'>Great developer working in Vue.js team & Cypress.</span></p>
+              <p><span className='motivators'>Have a read on his book about <b>Design Patterns for Vue.js</b> </span></p>
             </a>
           </div>
-          <div className="column">
-          <div className='sponsorImage'>
-          <a href="https://orangevalleygroup.com/">
-              {/* <h4> Orange Valley Resorts</h4> */}
-               {/* <p> Hills Resorts Vagamon</p> */}
-               <img src="images/orangevalley.png" />
-            </a>
-             
-            </div>
-           
           </div>
         </div>
       </div>
@@ -347,10 +352,10 @@ const BlogSection = () => {
   return (
     <div id="App">
       <div className='logoheader'>
-        <img src="images/eagle.png" />
+        <img src="images/automatelogo.png" />
         {/* {isDesktopOrLaptop && <h1>Blogs</h1>} */}
       </div>
-      <h2>My GitHub Repos</h2>
+      <h2>GitHub Repos</h2>
       <img className='setionImgDropStyle' src="images/repo.svg" alt="drop" />
       <div className='container'>
         <SingleShot />
@@ -375,9 +380,42 @@ const BlogSection = () => {
           <img src="images/bannerImg.png"></img>
           </div>
       </div>
-      <h2>Awesome Supporters</h2>
+      <h2>Supporters</h2>
       <div className='container'>
         <MySponsor />
+      </div>
+      <h2>Interested In Playing Soccer</h2>
+      <div className='row'>
+          <div className='soccerInvites'>
+          <div className="column">
+            <div className='soccerInviteImg'>
+              <img src="images/soccerbanner1.png"></img>
+            </div>
+          </div>
+          <div className="column">
+            <div className='soccerInviteImg'>
+              <div className='inviteText'>
+                <h2>Join Us</h2>
+                <p>
+                  <span>
+                    <div className='richtextjoining'>
+                      <p>
+                        Are you a committed soccer player ? Interested in playing 7 - a side game or occasional 9 - a side game. 
+                        If your answer is Yes, please join us for regular fun.
+                        Click on our SSS logo below which will direct to our FB page.
+                      </p>
+                        <p>
+                          <a href="https://www.facebook.com/southsidesoccerstuds/">
+                            <img src="images/SSSImg.png" />
+                          </a>
+                        </p>
+                    </div>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
       </div>
       <BottomSection />
     </div>

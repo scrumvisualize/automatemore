@@ -20,6 +20,8 @@ const GroupByTags = () => {
         height: '30px',
         marginLeft: '20px',
         backgroundColor: '#dae0f5',
+        backgroundColor: '#798bc7',
+        color: '#fff',
         fontWeight: "900",
         opacity: 1,
         borderColor: "#fafcff"
@@ -74,7 +76,8 @@ const GroupByTags = () => {
             <div className='groupbyTags'>
                 <div className='row'>
                     <div className='plusBtn'>
-                        <input onClick={handleClick} style={style} type="button" value="+"></input>
+                        {/* <input onClick={handleClick} style={style} type="button" value="+"></input> */}
+                        <button onClick={handleClick} style={style} type="button">+</button>
                     </div>
                     {isShown && (
                         <div className='groupByTagData'>
