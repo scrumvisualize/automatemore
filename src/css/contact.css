@@ -64,7 +64,7 @@
         width: 500px !important;
         height: 500px !important;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)) !important;
         margin: 50px 0px 0px 440px !important;
         border-color: #4076bd;
         background-color: #fff;

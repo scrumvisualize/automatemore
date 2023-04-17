@@ -43,16 +43,16 @@ const About = () => {
                     </div>
                     <div className="box rightside">
                         <p>
-                            Hey!, Hola!, Bonjour!, Hallå!, Nǐ hǎo!, Namaskaram!, I'm Vinod! I'm an automation engineer working at <a href="https://www.teachstarter.com/">Teach Starter</a>, in Brisbane. I am currently working on Cypress, Javascript and GitHub actions. 
+                            Hey, I'm Vinod! I'm an automation engineer working at <a href="https://www.teachstarter.com/">Teach Starter</a>, in Brisbane. I am working on Cypress, Javascript and GitHub actions. 
                         </p>
                         <hr></hr>
                         <div>Other things about me:</div>
                         <ul className="profile data">
-                            <li>I am originally from South India. I completed my engineering in 2002, later started my career in testing & completed an ISTQB certification.
+                            <li>I am originally from South India. I completed my engineering in 2002, later choosed my career in testing.
                             </li>
                             {/* <li>I've worked in various industries such as Healthcare, Airline, Market Research, Job Management, Education and have experience in messaging standards like HL7, IATA.</li> */}
                             <li>On a daily basis, I'm responsible for creating e2e automation tests, api tests in Cypress and maintaining stable automation framework.</li>
-                            <li>Learned something by doing - I have struggled, consistently failed many times and now able to develop multiple web applications using Reactjs, Express, Axios, Sequelize, MySQL, Postgres, Java, Html, and javascript.</li>
+                            <li>Learned something by doing - I have struggled, consistently failed many times and now able to develop multiple web applications using Reactjs, Express, Axios, Sequelize, MySQL, Postgres, Html, and javascript.</li>
                             <li>I love to play soccer during weekdays/weekends with my community soccer club in Brisbane. It helps my mental and physical wellbeing and keeps my spirits high!</li>
                             <li>One of my long time wish was to create a blog site in Reactjs & I am passionate to do more projects in React</li>
                             <li>Interested in innovation and ideas and would love to listen to people with similar vibes! </li>

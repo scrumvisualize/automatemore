@@ -170,25 +170,6 @@ const BlogSection = () => {
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
 
 
-  // const handleChange = (e) => {
-  //   setSearchTerm(e.target.value);
-  // }
-
-  // /* Send a GET request to server and get the blog data from contentful website and display in the Home page */
-  // useEffect(() => {
-  //   setSearchResults(blogData);
-  // }, []);
-
-  // /* Type the blog text in the search box, system will filter the blog post based on the search criteria in the Home page */
-  // const results = React.useMemo(
-  //   () =>
-  //     searchResults.filter(blog => {
-  //       return blog.heading.toLowerCase().includes(searchTerm) || blog.heading.toUpperCase().includes(searchTerm)
-  //     }),
-  //   [searchTerm, searchResults]
-  // );
-  
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -202,11 +183,6 @@ const BlogSection = () => {
   }, []);
 
 
-
-  /* Display the blogs that are most viewed under the popular blog section in the Home page */
-  // useEffect(() => {
-  //   setPopularResults(popularResults.sort((a, b) => b.views - a.views).slice(0, 2))
-  // }, []);
 
   const topTwo = popularResults.sort((a, b) => b.views - a.views).slice(0, 3)
 
@@ -276,30 +252,6 @@ const BlogSection = () => {
           </a>
         ))} 
          
-           {/* {popularResults.map(({ id, topViews, date, photo, heading, blogDetails }) => (
-            <a key={id} href="https://google.com">
-              <div key={id} className='blogImageSection'>
-                <img alt="id" src={photo} />
-                <div key={id} className='dataArea'>
-                  <span key={id} className='dataDate'>{date}</span>
-                  <span className='tags'>cypress</span>
-                  <h3>{heading}</h3>
-                  <p>
-                    Best heading added here.
-                    The most relevant data added here.
-                    Greatest of all time. Print the whole text here.
-                    Ideas are always usefull....
-                  </p>
-                  <a href="_blank" className="readmoreLink">
-                    Read more →
-                  </a>
-                  <span className='views'>
-                    {topViews > 999 ? (topViews / 1000).toFixed(2) + "K" : topViews}
-                  </span>
-                </div>
-              </div>
-            </a>
-          ))}  */}
         </div>
       </div>
     
@@ -380,11 +332,11 @@ const BlogSection = () => {
           <img src="images/bannerImg.png"></img>
           </div>
       </div>
-      <h2>Supporters</h2>
+      <h2>Proud Supporters</h2>
       <div className='container'>
         <MySponsor />
       </div>
-      <h2>Interested In Playing Soccer</h2>
+      <h2>Let's kick some goals</h2>
       <div className='row'>
           <div className='soccerInvites'>
           <div className="column">
