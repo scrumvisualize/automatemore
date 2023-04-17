@@ -438,47 +438,6 @@ margin-right: 3px;
     border-radius: 5px;
   }
 
-  .soccerInvites{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)) !important;
-    text-align: center;
-    margin: 20px 0px 10px 0px;
-    border-radius: 5px;
-  }
-
-  .soccerInviteImg img {
-    width: 100%;
-    height: 500px;
-    margin: 20px 0px 10px 0px;
-    border-radius: 5px;
-  }
-
-  .richtextjoining {
-    color: #4d4d4d;
-    font-family: USSF90MinText,helvetica,arial,sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    font-weight: 400;
-    font-size: 17px;
-    margin: 0 0 2rem;
-    padding-bottom: 0;
-    width: 100%;
-    overflow-wrap: break-word;
-  }
-  .richtextjoining p{
-    margin: 20px 20px 0px 20px;
-  }
-
-  .richtextjoining a img{ 
-    height: 300px;
-    width: 300px;
-  }
-
-  .inviteText h2{
-    margin: 0 auto;
-    text-align: center;
-  }
-
   .loadingData h1{
     color: #12a2bb;
     text-align: center;
@@ -649,3 +608,45 @@ a .motivators {
   }
 
 }  
+
+
+.soccerInvites{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(700px, 2fr)) !important;
+  text-align: center;
+  margin: 20px 0px 10px 0px;
+  border-radius: 5px;
+}
+
+.soccerInviteImg img {
+  width: 100%;
+  height: 500px;
+  margin: 20px 0px 10px 0px;
+  border-radius: 5px;
+}
+
+.richtextjoining {
+  color: #4d4d4d;
+  font-family: helvetica,arial,sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 0 0 2rem;
+  padding-bottom: 0;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+.richtextjoining p{
+  margin: 20px 20px 0px 20px;
+}
+
+.richtextjoining a img{ 
+  height: 300px;
+  width: 300px;
+}
+
+.inviteText h2{
+  margin: 0 auto;
+  text-align: center;
+}
