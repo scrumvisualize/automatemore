@@ -45,7 +45,7 @@ const repoData = [
 const loveData = [
   {
     id: 1,
-    image: "/images/soccer3.PNG"
+    image: "/images/soccer3.png"
   },
   {
     id: 2,
