@@ -621,7 +621,7 @@ a .motivators {
 @media only screen and (max-width: 1920px)  {
   .soccerInvites{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(610px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fill, minmax(650px, 2fr)) !important;
     text-align: center;
     margin: 20px 0px 10px 0px;
     border-radius: 5px !important;
@@ -636,7 +636,7 @@ a .motivators {
 
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(610px, 2fr)) !important;
+    grid-template-columns: repeat(auto-fill, minmax(650px, 2fr)) !important;
     grid-gap: 0px; /* Space between the columns */
   }
   
