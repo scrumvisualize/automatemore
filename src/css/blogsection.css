@@ -589,13 +589,39 @@ a .motivators {
     border-radius: 5px;
   }
 
+  .richtextjoining {
+    color: #4d4d4d;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0 0 2rem;
+    padding-bottom: 0;
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+  .richtextjoining p{
+    margin: 20px 20px 0px 20px;
+  }
+  
+  .richtextjoining a img{ 
+    height: 300px;
+    width: 300px;
+  }
+  
+  .inviteText h2{
+    margin: 0 auto;
+    text-align: center;
+  }
+
 }  
 
 
 @media only screen and (max-width: 1920px)  {
   .soccerInvites{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fill, minmax(610px, 1fr)) !important;
     text-align: center;
     margin: 20px 0px 10px 0px;
     border-radius: 5px !important;
@@ -606,6 +632,34 @@ a .motivators {
     height: 500px;
     margin: 20px 0px 10px 0px;
     border-radius: 5px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(610px, 2fr)) !important;
+    grid-gap: 0px; /* Space between the columns */
+  }
+  
+  .grid-item {
+    background-color: #d8daf0;
+    padding: 20px;
+    margin: 10px 0px 0px 20px;
+    border-radius: 15px;
+  }
+  
+  .grid-container h2{
+    height: 200px;
+    width: 500px;
+    margin: 30px 10px 10px 50px;
+    word-wrap: break-word;
+    font-size: 40px;
+    color: #484444;
+  }
+  
+  .grid-container img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
   }
 
 }  
@@ -619,64 +673,5 @@ a .motivators {
   border-radius: 5px;
 } */
 
-.soccerInviteImg img {
-  width: 100%;
-  height: 500px;
-  margin: 20px 0px 10px 0px;
-  border-radius: 5px;
-}
-
-.richtextjoining {
-  color: #4d4d4d;
-  font-family: helvetica,arial,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 17px;
-  margin: 0 0 2rem;
-  padding-bottom: 0;
-  width: 100%;
-  overflow-wrap: break-word;
-}
-.richtextjoining p{
-  margin: 20px 20px 0px 20px;
-}
-
-.richtextjoining a img{ 
-  height: 300px;
-  width: 300px;
-}
-
-.inviteText h2{
-  margin: 0 auto;
-  text-align: center;
-}
 
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(610px, 2fr)) !important;
-  grid-gap: 0px; /* Space between the columns */
-}
-
-.grid-item {
-  background-color: #d8daf0;
-  padding: 20px;
-  margin: 10px 0px 0px 20px;
-  border-radius: 15px;
-}
-
-.grid-container h2{
-  height: 200px;
-  width: 500px;
-  margin: 30px 10px 10px 50px;
-  word-wrap: break-word;
-  font-size: 40px;
-  color: #484444;
-}
-
-.grid-container img{
-  height: 300px;
-  width: 100%;
-  border-radius: 10px 10px 10px 10px;
-}
