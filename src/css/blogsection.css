@@ -655,9 +655,8 @@ a .motivators {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-template-columns: repeat(auto-fill, minmax(610px, 2fr)) !important;
   grid-gap: 0px; /* Space between the columns */
- 
 }
 
 .grid-item {
