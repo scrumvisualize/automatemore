@@ -611,13 +611,13 @@ a .motivators {
 }  
 
 
-.soccerInvites{
+/* .soccerInvites{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(700px, 2fr)) !important;
   text-align: center;
   margin: 20px 0px 10px 0px;
   border-radius: 5px;
-}
+} */
 
 .soccerInviteImg img {
   width: 100%;
@@ -650,4 +650,34 @@ a .motivators {
 .inviteText h2{
   margin: 0 auto;
   text-align: center;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-gap: 0px; /* Space between the columns */
+ 
+}
+
+.grid-item {
+  background-color: #d8daf0;
+  padding: 20px;
+  margin: 10px 0px 0px 20px;
+  border-radius: 15px;
+}
+
+.grid-container h2{
+  height: 200px;
+  width: 500px;
+  margin: 30px 10px 10px 50px;
+  word-wrap: break-word;
+  font-size: 40px;
+  color: #484444;
+}
+
+.grid-container img{
+  height: 300px;
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
 }

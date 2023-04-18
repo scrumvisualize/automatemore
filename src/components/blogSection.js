@@ -305,7 +305,14 @@ const BlogSection = () => {
     <div id="App">
       <div className='logoheader'>
         <img src="images/automatelogo.png" />
-        {/* {isDesktopOrLaptop && <h1>Blogs</h1>} */}
+      </div>
+      <div className='grid-container'>
+        <div class="grid-item"><h2>Actively writing about automation, Cypress, React or anything comes in a daily automation life.</h2> </div>
+        <div class="grid-item"><img src="images/startup2.png"></img></div>
+        {/* <p>
+          <h2>Actively writing about automation, cypress, react. Sharing some of the most recent learnings and works.</h2> 
+          <img src="images/startUp.png"></img>
+        </p> */}
       </div>
       <h2>GitHub Repos</h2>
       <img className='setionImgDropStyle' src="images/repo.svg" alt="drop" />
