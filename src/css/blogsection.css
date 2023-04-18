@@ -399,6 +399,7 @@ margin-right: 3px;
   }
 
   .popularArea div p:nth-of-type(1n+3) {display: none;}
+  .popularArea div pre code:nth-of-type(1n+1) {display: none;}
   
   .popularArea div h3 {
     width: 450px;
