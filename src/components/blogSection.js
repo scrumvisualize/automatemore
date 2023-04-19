@@ -307,7 +307,7 @@ const BlogSection = () => {
         <img src="images/automatelogo.png" />
       </div>
       <div className='grid-container'>
-        <div class="grid-item"><h2>Actively writing about automation, Cypress, React or anything comes in a daily automation life.</h2> </div>
+        <div class="grid-item"><h2>Writing actively about automation, Cypress, React, or anything that comes in the daily automation lifecycle.</h2> </div>
         <div class="grid-item"><img src="images/startup2.png"></img></div>
         {/* <p>
           <h2>Actively writing about automation, cypress, react. Sharing some of the most recent learnings and works.</h2> 
