@@ -32,7 +32,7 @@
 
   .container code {
     display: block;
-    height: 50px !important;
+    /* height: 50px !important; */
     width: 500px;
     /* background-color:#c3cbe0; */
     background-color:#747678;
