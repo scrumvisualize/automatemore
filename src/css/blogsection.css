@@ -406,11 +406,15 @@ margin-right: 3px;
   .popularArea div pre code:nth-of-type(1n+1) {display: none;}
   
   .popularArea div h3 {
-    width: 450px;
+    width: 200px;
     color: rgb(6, 6, 6) !important;
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .popularArea div h5{
