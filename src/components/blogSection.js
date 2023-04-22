@@ -363,6 +363,7 @@ const BlogSection = () => {
                         If your answer is Yes, please join us for regular fun.
                         Click on our SSS logo below which will direct to our FB page.
                       </p>
+                       <p><b>We are actively looking for goalkeepers! If you have goal keeping skills, please reach out to us!</b></p>
                         <p>
                           <a href="https://www.facebook.com/southsidesoccerstuds/">
                             <img src="images/SSSImg.png" />

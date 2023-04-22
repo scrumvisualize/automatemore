@@ -182,8 +182,15 @@ font-size: 14px;
   font-size: 14px;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* display: inline-block; */
+  /* white-space: nowrap; */
+  display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
   border: 1px dashed rgb(212, 209, 208);
 }
 .dataArea div p:nth-of-type(1n+3) {display: none;}
@@ -397,6 +404,8 @@ margin-right: 3px;
     font-size: 14px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    display: inline-block;
+    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
     border: 1px dashed rgb(212, 209, 208);
