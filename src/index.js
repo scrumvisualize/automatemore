@@ -12,6 +12,7 @@ import "./css/admin.css";
 import "./css/blogdetails.css";
 import "./css/popularblogdetails.css";
 import "./css/contact.css";
+import "./css/errorpage.css";
 import { BrowserRouter, Route, Routes, Switch} from "react-router-dom";
 import Navigation from './components/navigation';
 import Home from "./components/home";
@@ -22,7 +23,7 @@ import BlogDetails from "./components/blogDetails";
 import PopularBlogDetails from "./components/popularBlogDetails";
 import Admin from "./components/admin";
 import Contact from "./components/contact";
-
+import ErrorPage from "./components/errorPage";
 import Footer from "./components/footer";
 import { ProtectedRoute } from "./components/protectedRoute";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -49,6 +50,7 @@ root.render(
           </Route>
           <Route path="/popularBlogDetails"  element={<PopularBlogDetails />}>
           </Route>
+          <Route exact path="*" component={ErrorPage}/>
           <Route path="/admin" element={
               <ProtectedRoute >
                   <Admin/>

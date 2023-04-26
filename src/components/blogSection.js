@@ -63,101 +63,12 @@ const loveData = [
 
 ]
 
-const blogData = [
-  {
-    id: 1,
-    date: "25 Jan 2023",
-    photo: "https://media.graphassets.com/uS7v3eV4SGP7QasetB2a",
-    heading: "Cypress setup blog",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-  {
-    id: 2,
-    date: "22 Jan 2022",
-    photo: "https://media.graphassets.com/8EB6ktlTjaRaGvyT9NYQ",
-    heading: "React state details",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-  {
-    id: 3,
-    date: "22 Jan 2021",
-    photo: "https://media.graphassets.com/uS7v3eV4SGP7QasetB2a",
-    heading: "Javascript timeout",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-  {
-    id: 4,
-    date: "21 Jan 2022",
-    photo: "https://media.graphassets.com/uS7v3eV4SGP7QasetB2a",
-    heading: "Playwright tool setup",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-  {
-    id: 5,
-    date: "21 Jan 2022",
-    photo: "https://media.graphassets.com/uS7v3eV4SGP7QasetB2a",
-    heading: "Unix commands",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-  {
-    id: 6,
-    date: "22 Jan 2022",
-    photo: "https://media.graphassets.com/uS7v3eV4SGP7QasetB2a",
-    heading: "Github actions run",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-  {
-    id: 7,
-    date: "22 Jan 2022",
-    photo: "https://media.graphassets.com/8EB6ktlTjaRaGvyT9NYQ",
-    heading: "Vue state vs React state",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  }
-]
-
-const popularData = [
-  {
-    id: 1,
-    topViews: 875,
-    date: "22 Jan 2022",
-    photo: "https://media.graphassets.com/8EB6ktlTjaRaGvyT9NYQ",
-    heading: "React state",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-  {
-    id: 2,
-    topViews: 27899,
-    date: "21 Jan 2022",
-    photo: "https://media.graphassets.com/uS7v3eV4SGP7QasetB2a",
-    heading: "Unix commands",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-  {
-    id: 3,
-    topViews: 352,
-    date: "21 Jan 2021",
-    photo: "https://media.graphassets.com/uS7v3eV4SGP7QasetB2a",
-    heading: "Handling Vue State",
-    blogDetails: "The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-  {
-    id: 4,
-    topViews: 5764,
-    date: "22 Jan 2022",
-    photo: "https://media.graphassets.com/8EB6ktlTjaRaGvyT9NYQ",
-    heading: "Cypress text field",
-    blogDetails: "Best heading added here. The most relevant data added here. Greatest of all time. Wont be a good idea play here always."
-  },
-
-]
 
 
 const BlogSection = () => {
 
   const [repoList, setRepoList] = useState(repoData);
   const [interests, setInterests] = useState(loveData);
-  // const [searchTerm, setSearchTerm] = useState("");
-  // const [searchResults, setSearchResults] = useState([]);
   const [show, setShow] = useState(false);
 
   const [popularResults, setPopularResults] = useState([]);
@@ -309,10 +220,6 @@ const BlogSection = () => {
       <div className='grid-container'>
         <div class="grid-item"><h2>Writing actively about automation, Cypress, React, or anything that comes in the daily automation lifecycle.</h2> </div>
         <div class="grid-item"><img src="images/startup2.png"></img></div>
-        {/* <p>
-          <h2>Actively writing about automation, cypress, react. Sharing some of the most recent learnings and works.</h2> 
-          <img src="images/startUp.png"></img>
-        </p> */}
       </div>
       <h2>GitHub Repos</h2>
       <img className='setionImgDropStyle' src="images/repo.svg" alt="drop" />
