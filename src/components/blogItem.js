@@ -23,11 +23,15 @@ const BlogItem = () => {
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
   }
-
+  
+// useQuery and adding sorting the blog data based on createAt date, ie display the latest one first on the page.
 
   const { data, isLoading, isError } = useQuery(["blogs"], async () => {
-    return await axios.get(`${appUrl}/service/listofblogs`).then((res) => res.data.blogData );
+    return await axios
+        .get(`${appUrl}/service/listofblogs`)
+        .then((res) => res.data.blogData.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) );
   });
+   
 
   /* Type the blog text in the search box, system will filter the blog post based on the search criteria in the Home page */
 
@@ -48,6 +52,7 @@ const BlogItem = () => {
   if(isLoading) {
     return <div className='loadingData'><h1>Loading...</h1></div>
   }
+
 
 
 

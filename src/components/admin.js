@@ -175,35 +175,7 @@ useEffect(() => {
 
 
     
-    const Popup = () => {
 
-        const showPopupAlert = () => {
-            setShowAlert(false);
-        }
-          
-
-        const style = {
-          position: 'absolute',
-          left: '50%',
-          top: '50%',
-          width: '250px',
-          height: '100px',
-          borderRadius: '5px',
-          backgroundColor: '#6d418c',
-          opacity: 1,
-        }
-      
-        return (
-          <div>
-            {createPortal(
-              <div style={style} >
-                <span onClick={showPopupAlert} className="popuptext" id="myPopup"><strong>Success!</strong> This child is placed in the document body.</span>
-              </div>,
-              document.body
-            )}
-          </div>
-        ) 
-      }
 
     return (
         <div id="App">
@@ -299,7 +271,6 @@ useEffect(() => {
                 </div>
                 
             </div>
-            {/* <Popup/> */}
         </div>
         
     )
