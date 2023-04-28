@@ -1,30 +1,13 @@
 const express = require('express');
-// import express from 'express';
-// import bodyParser from 'body-parser';
 const bodyParser = require("body-parser");
 const db = require("./db/dbConfig");
 const { Sequelize, DataTypes } = require("sequelize");
-//import {Sequelize, DataTypes } from 'sequelize';
+
 const bcrypt = require('bcryptjs');
-
-//dotenv.config()
-
-// const dbName = process.env.REACT_DB_NAME;
-// console.log("Database Name:: "+dbName);
-
-//var multer  = require('multer')
-//var path = require('path');
-//const moment = require('moment');
-
 
 const usersSchema = require('./modals/users');
 const usersBlogSchema = require('./modals/userBlogs');
 const subscriberSchema = require('./modals/subscriber');
-
-// import {usersSchema} from "./modals/users.js";
-// import usersBlogSchema from "./modals/userBlogs.js"; 
-// import subscriberSchema from "./modals/subscriber.js";
-// import cors from 'cors';
 
 
 const cors = require('cors');
